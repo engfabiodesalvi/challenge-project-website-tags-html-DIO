@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coletânea de Tags HTML</title>
+</head>
+<body>
+    <h1 id="inicio">Coletânea de tags e atributos da linguagem HTML</h1>
+
+    <address>Autor: Fabio Toledo Bonemer De Salvi</address>
+
+    <hr />
+
+    <h2>Principais tags e atributos da linguagem HTML</h2>
+
+    <!--
+        ul>li*10>a
+        -->
+
+    <ul>
+        <li><a href="#tags-basicas">Tags básicas</a>
+            <ul>
+                <li><a href="#tag-html">&lt;html&gt; e &lt;/html&gt;</a></li>
+                <li><a href="#tag-head">&lt;head&gt; e &lt;/head&gt;</a></li>
+                <li><a href="#tag-body">&lt;body&gt; e &lt;/body&gt;</a></li>
+                <li><a href="#estrutura-basica">Estrutura básica</a></li>
+            </ul>
+        </li>
+        <li><a href="#tags-adicao-formatacao">Tags e atributos para adição e formatação de textos</a>
+            <ul>
+                <li><a href="#tags-sep-estilo">Tags para separação e estilos</a></li>
+                <li><a href="#tags-organizacao">Tags de estrutura e organização</a></li>
+                <li><a href="#tags-estilo-aparencia">Tags de estilo de texto e aparência</a></li>
+                <li><a href="#tags-correcoes-rev">Tags de correções e revisões</a></li>
+                <li><a href="#tags-codigo-dados">Tags de código e entrada de dados</a></li>
+                <li><a href="#tags-citacoes-enderecos">Tags de citações e endereços</a></li>
+                <li><a href="#tags-atributos">Atributos para serem utilizados com as tags</a></li>
+                <li><a href="#tags-exemplo1-texto">Exemplo 1: Formatação de texto</a></li>
+                <li><a href="#tags-exemplo2-listas-subitens">Exemplo 2: Lista ordenada e lista não rdenada com itens e subitens</a></li>
+                <li><a href="#tags-exemplo3-codigos-dados">Exemplo 3: Códigos e entradas de dados</a></li>
+            </ul>
+        </li>
+        <li><a href="#tag-figura">Tag para incluir figuras</a></li>
+        <li><a href="#tag-incluir-dados">Tag para incluir dados</a></li>
+        <li><a href="#tag-ancora">Tag âncora (hyperlink)</a></li>
+    </ul>
+    
+    <hr />
+
+    <h2 id="tags-basicas">Tags básicas</h2>
+    <small><a href="#inicio">(Topo)</a></small>
+    <p>A estrutura básica de um documento escrito em HTML contém as tags delimitadoras do conteúdo que será tratado pela linguagem HTML, uma seção de cabeçalho (head) e uma seção de corpo (body):</p>
+
+    <ul>
+        <li id="tag-html">
+            <p><strong>&lt;html&gt; e &lt;/html&gt;:</strong> Delimita o conteúdo do documento que será tratado como HTML.</p>
+        </li>
+        <li id="tag-head">
+            <p><strong>&lt;head&gt; e &lt;/head&gt;:</strong> Seção de cabeçalho do documento responsável pelas informações de configuração do documento.</p>
+        </li>        
+        <li id="tag-body">
+            <p><strong>&lt;body&gt; e &lt;/body&gt;:</strong> Seção do documento responsável pela parte visual do documento.</p>
+        </li>
+        <li id="estrutura-basica">            
+            <p><strong>Estrutura básica:</strong></p>
+
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;                
+            </code></pre>
+
+        </li>        
+    </ul>
+
+    <hr />
+
+    <h2 id="tags-adicao-formatacao">Tags e atributos para adição e formatação de textos</h2>
+    <small><a href="#inicio">(Topo)</a></small>
+
+    <ul>
+        <li id="tags-sep-estilo">
+            <p><strong>Tags para separação e estilos</strong></p>        
+
+            <ul>
+                <li>
+                    <p><strong>&lt;hr&gt;:</strong> Inclui uma linha horizontal que separa tematicamente o conteúdo. É uma tag vazia (autcontida).</p>
+                </li>
+                <li>
+                    <p><strong>&lt;br/&gt;:</strong> Inclui uma quebra linha, forçando o texto seguinte a aparecer na linha de baixo.</p>
+                </li>
+                <li>
+                    <p><strong>CSS (Cascading Style Sheets):</strong> A forma mais flexível e recomendada para estilizar. Você pode aplicar estilos aos elementos <b>&lt;div&gt;</b>, <b>&lt;span&gt;</b> e outros, e definir o visual sem alterar a estrutura do HTML.</p>
+                </li>
+            </ul>
+            
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>
+
+        <li id="tags-organizacao">
+            <p><strong>Tags de estrutura e organização</strong></p>
+        
+            <ul>
+                <li>
+                    <p><strong>&lt;h1&gt; a &lt;h6&gt;:</strong> Definem títulos, do mais importante (<b>&lt;h1&gt;</b>) ao menos importante (<b>&lt;h6&gt;</b>).</p>                
+
+                    <ul>
+                        <li>
+                            <p><strong>&lt;h1&gt; e &lt;/h1&gt;:</strong> Deve ser utilizado apenas uma vez por página. Identifica o assunto principal do conteúdo.</p>
+                        </li>
+                        <li>
+                            <p><strong>&lt;h2&gt; e &lt;/h2&gt;:</strong> Usado para subtítulos que dividem o conteúdo em secções principais. Pode haver múltiplos <b>&lt;h2&gt;</b> em uma página.</p>
+                        </li>
+                        <li>
+                            <p><strong>&lt;h3&gt; e &lt;/h3&gt;:</strong> Usado para subseções dentro de uma seção <b>&lt;h2&gt;</b>.</p>
+                        </li>
+                        <li>
+                            <p><strong>&lt;h4&gt; e &lt;/h4&gt;:</strong> Usado para subdivisões ainda menores dentro de uma seção <b>&lt;h3&gt;</b>.</p>
+                        </li>
+                        <li>
+                            <p><strong>&lt;h5&gt; e &lt;/h5&gt;:</strong> Usado para subdivisões dentro de uma seção <b>&lt;h4&gt;</b>.</p>
+                        </li>
+                        <li>
+                            <p><strong>&lt;h6&gt; e &lt;/h6&gt;:</strong> Usado para o nivel mais baixo de cabeçalho, subdividindo secções <b>&lt;h5&gt;</b>.</p>
+                        </li>
+                    </ul>            
+                    
+                    <small><a href="#inicio">(Topo)</a></small>
+                </li>
+
+                <li>
+                    <p><strong>&lt;p&gt; e &lt;/p&gt;:</strong> Inclui um parágrafo de texto.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;ul&gt; e &lt;/ul&gt;:</strong> Usada para criar listas não ordenadas.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;ol&gt; e &lt;/ol&gt;:</strong> Usada para criar listas ordenadas.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;li&gt; e &lt;/li&gt;:</strong> Usada para criar itens nas listas ordenadas e não ordenadas.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;div&gt; e &lt;/div&gt;:</strong> Cria uma seção de nível de bloco para agrupar utros elementos. É útil para aplicar estilos em um grupo de conteúdo. É um elemento não semântico.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;span&gt;</strong> Usada para agrupar elementos inline, como palavras ou frases específicas dentro de um parágrafo, para aplicar estilos pontuais.</p>
+                </li>
+            </ul>
+
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>
+
+        <li id="tags-estilo-aparencia">
+            <p><strong>Tags de estilo de texto e aparência</strong></p>        
+
+            <!--
+                ul>li*10>p>strong{&lt;&gt; e &lt;/&gt;:}
+                -->
+            <ul>
+                <li>
+                    <p><strong>&lt;b&gt; e &lt;/b&gt;:</strong> Torna o texto em <b>negrito</b> sem dar significado semântico adicional (estílo físico).</p>
+                </li>
+                <li>
+                    <p><strong>&lt;strong&gt; e &lt;/strong&gt;:</strong> Indica que  texto tem forte importância ou ênfase, e é exibido em <b>negrito</b> por padrão (estilo semântico).</p>
+                </li>
+                <li>
+                    <p><strong>&lt;i&gt; e &lt;/i&gt;:</strong> Torna o texto em <i>itálico</i> (estilo físico).</p>
+                </li>
+                <li>
+                    <p><strong>&lt;em&gt; e &lt;/em&gt;:</strong> Enfatiza o texto, que geralmente é exibido em itálico (estilo semãntico).</p>
+                </li>
+                <li>
+                    <p><strong>&lt;u&gt; e &lt;/u&gt;:</strong> Torna o texto <u>sublinhado</u> ou <u>underline</u>.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;sup&gt; e &lt;/sup&gt;:</strong> Torna o texto <sup>sobreescrito</sup> ou <sup>superscript</sup>.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;sub&gt; e &lt;/sub&gt;:</strong> Torna o texto <sub>subscrito</sub> ou <sub>subscript</sub>.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;small&gt; e &lt;/small&gt;:</strong> Apresenta o texto em uma fonte menor que o padrão, usado para coisas como direitos autorais.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;mark&gt; e &lt;/mark&gt;:</strong> Destaca o texto, com se ele estivesse marcado com um marca-texto.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;font&gt; e &lt;/font&gt;:</strong> <i>(obsoleto)</i> Define cor, tamanho e tipo de fonte diretamente no HTML.</p>
+                </li>
+            </ul>
+        
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>
+
+        <li id="tags-correcoes-rev">
+            <p><strong>Tags de correções e revisões</strong></p>        
+
+            <!--
+                ul>li*2>p>strong{&lt;&gt; e &lt;/&gt;:}
+                -->
+            <ul>
+                <li>
+                    <p><strong>&lt;del&gt; e &lt;/del&gt;:</strong> Indica texto removido (aparece riscado).</p>
+                </li>
+                <li>
+                    <p><strong>&lt;ins&gt; e &lt;/ins&gt;:</strong> Indica texto inserido (aparece sublinhado).</p>
+                </li>
+            </ul>
+
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>
+
+        <li id="tags-codigo-dados">
+            <p><strong>Tags de código e entrada de dados</strong></p>        
+
+            <!--
+                ul>li*5>p>strong{&lt;&gt; e &lt;/&gt;:}
+                -->
+            <ul>
+                <li>
+                    <p><strong>&lt;pre&gt; e &lt;/pre&gt;:</strong> Usada para preservar espaços, quebras de linha e formatação original do texto, o que é essencial para exibir códigos, saídas de programas, exemplos literais ou blocos de texto formatados - o mesmo contexto onde usamos <b>&lt;code&gt;</b>, <b>&lt;samp&gt;</b>, <b>&lt;kdb&gt;</b> e <b>&lt;var&gt;</b>.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;code&gt; e &lt;/code&gt;:</strong> Exibe um trecho de código.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;kbd&gt; e &lt;/kbd&gt;:</strong> Representa um tecla pressionada pelo usuário.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;var&gt; e &lt;/var&gt;:</strong> Indica uma variável.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;samp&gt; e &lt;/samp&gt;:</strong> Representa uma saída de programa.</p>
+                </li>
+            </ul>
+
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>
+
+        <li id="tags-citacoes-enderecos">
+            <p><strong>Tags de citações e endereços</strong></p>        
+
+            <ul>
+                <li>
+                    <p><strong>&lt;blockquote&gt; e &lt;/blockquote&gt;:</strong> Define uma citação longa em bloco.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;q&gt; e &lt;/q&gt;:</strong> Define uma sitação curta dentro de um parágrafo.</p>
+                </li>
+                <li>
+                    <p><strong>&lt;samp&gt; e &lt;/samp&gt;:</strong> Indica informações de contato.</p>
+                </li>
+            </ul>
+
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>
+
+        <li id="tags-atributos">
+            <p><strong>Atributos para serem utilizados com as tags</strong></p>        
+
+            <ul>
+                <li>
+                    <p><strong>id:</strong> Define um identificador único para um elemento específico. Auxilia na identificação de um elemento quando se utiliza Javascript.</p>
+                </li>
+                <li>
+                    <p><strong>style:</strong> Define um estilo ão texto, podendo ser uma cor, uma determinada fonte, um determinada tamanho, entre outros, aplicado diretemente a um elemento.</p>
+                </li>
+                <li>
+                    <p><strong>class:</strong> Define a classe a que esta tag pertence. A classe representa um conjunto de estilos pré-determinado que pode ser aplicado a mais de um elemento.</p>
+                </li>
+            </ul>
+
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>
+
+        <li id="tags-exemplo1-texto">
+            <p><strong>Exemplo 1: Formatação de texto</strong></p>        
+
+            <div>
+            <pre><code>
+&lt;h1&gt;&lt;strong id="titulo" style="color:blue;" class="titulo-principal"&gt;Meu primeiro &lt;i&gt;HTML!&lt;/i&gt;&lt;/strong&gt;&lt;/h1&gt;
+            </pre></code>
+
+            <h1><strong id="titulo" style="color:blue;" class="titulo-principal">Meu primeiro <i>HTML!</i></strong></h1>
+            </div>
+
+            <br />
+
+            <div>
+            <pre><code>
+&lt;h2&gt;&lt;strong&gt;&lt;u&gt;tecnologia&lt;sup&gt;*&lt;/sup&gt;&lt;/u&gt;&lt;/strong&gt;&lt;/h2&gt;
+            </pre></code>
+
+    <h2><strong><u>tecnologia<sup>*</sup></u></strong></h2>        
+            </div>
+
+            <br />
+
+            <div>
+            <pre><code>
+&lt;blockquote&gt;
+    &lt;i&gt;O jeito DIO._ para você ganhar destaque mais rápido no mercado.&lt;/i&gt;
+&lt;/blockquote&gt;  
+            </pre></code>
+
+            <blockquote>
+                <i>O jeito DIO._ para você ganhar destaque mais rápido no mercado.</i>
+            </blockquote>
+            </div>
+
+            <br />
+
+            <div>
+            <pre><code>
+&lt;p&gt;Os nossos cursos e programas de formação são criados em conjunto come specialistas das empresas &lt;mark&gt;inovadoras do mundo&lt;/mark&gt;.&lt;/p&gt;
+            </pre></code>
+            
+            <p>Os nossos cursos e programas de formação são criados em conjunto come specialistas das empresas <mark>inovadoras do mundo</mark>.</p>
+            </div>
+
+            <br />
+
+            <div>
+            <pre><code>
+&lt;blockquote&gt;O sucesso é a soma de pequenos esforços repetidos dia após dia.&lt;/blockquote&gt;
+            </pre></code>
+
+            <blockquote>O sucesso é a soma de pequenos esforços repetidos dia após dia.</blockquote>
+            </div>
+
+            <div>
+            <pre><code>
+&lt;p&gt;Como disse o autor: &lt;q&gt;Aprender é evoluir&lt;/q&gt;.&lt;/p&gt;        
+            </pre></code>
+
+            <p>Como disse o autor: <q>Aprender é evoluir</q>.</p>
+            </div>
+
+            <br />
+
+            <div>
+            <pre><code>
+&lt;address&gt;Autor: Fabio Toledo Bonemer De Salvi - engfabiodesalvi@exemplo.com&lt;/address&gt;
+            </pre></code>
+            
+            <address>Autor: Fabio Toledo Bonemer De Salvi - engfabiodesalvi@exemplo.com</address>
+            </div>
+
+            <br />
+
+            <div>
+            <pre><code>
+&lt;!--Obsoleto! Utilizar CSS!--&gt;
+&lt;font color="blue" size="4" face="Arial"&gt;Texto com estilo antigo&lt;/font&gt;
+            </pre></code>
+            
+            <!--Obsoleto! Utilizar CSS!-->
+
+            <font color="blue" size="4" face="Arial">Texto com estilo antigo</font>
+            </div>
+
+            <br />
+
+            <div>
+            <pre><code>
+&lt;p&gt;Preço antigo: &lt;del&gt;R$50,00&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;Preço novo: &lt;ins&gt;R$39,90&lt;/ins&gt;&lt;/p&gt;
+            </pre></code>
+            
+            <p>Preço antigo: <del>R$50,00</del></p>
+            <p>Preço novo: <ins>R$39,90</ins></p>        
+            </div>
+            
+            <br />
+            
+            <div>
+            <pre><code>
+&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+
+&lt;p&gt;Baseado em &lt;cite&gt;Dom Casmurro&lt;/cite&gt;, de Machado de Assis.&lt;/p&gt;
+
+&lt;p&gt;&lt;dfn&gt;API&lt;/dfn&gt; é um conjunto de rotinas que permite a comunicação entre sistemas.&lt;/p&gt;           
+            </code></pre>
+
+            <abbr title="HyperText Markup Language">HTML</abbr>
+
+            <p>Baseado em <cite>Dom Casmurro</cite>, de Machado de Assis.</p>
+
+            <p><dfn>API</dfn> é um conjunto de rotinas que permite a comunicação entre sistemas.</p>        
+            </div>
+                    
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>
+
+        <li id="tags-exemplo2-listas-subitens">
+            <p><strong>Exemplo 2: Lista ordenada e lista não rdenada com itens e subitens</strong></p>        
+
+            <div>
+            <pre><code>
+&lt;h2&gt;Minha primeira lista ordenada!&lt;/h2&gt;
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt; Item 4
+        &lt;ol&gt;
+            &lt;li&gt;Item 3.1&lt;/li&gt;
+            &lt;li&gt;Item 3.2&lt;/li&gt;
+            &lt;li&gt;Item 3.3&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+            </code></pre>
+
+            <h2>Minha primeira lista ordenada!</h2>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li> Item 4
+                    <ol>
+                        <li>Item 3.1</li>
+                        <li>Item 3.2</li>
+                        <li>Item 3.3</li>
+                    </ol>
+                </li>
+            </ol>
+
+            </div>
+
+            <div>
+            <br />
+            <code><pre>
+&lt;h2&gt;Minha primeira lista não ordenada!&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item4
+        &lt;ol&gt;
+            &lt;li&gt;Item 3.1&lt;/li&gt;
+            &lt;li&gt;Item 3.2&lt;/li&gt;
+            &lt;li&gt;Item 3.3&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;             
+            </code></pre>
+
+            <h2>Minha primeira lista não ordenada!</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item4
+                    <ol>
+                        <li>Item 3.1</li>
+                        <li>Item 3.2</li>
+                        <li>Item 3.3</li>
+                    </ol>
+                </li>
+            </ul>         
+            </div>
+
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>        
+
+        <li id="tags-exemplo3-codigos-dados">
+            <p><strong>Exemplo 3: Códigos e entradas de dados</strong></p>        
+
+            <div>
+            <pre><code>
+&lt;!--HTML--&gt;
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;p&amp;gt;Olá, mundo!&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+            </code></pre>
+            
+            <!--HTML-->
+            <pre><code>
+&lt;p&gt;Olá, mundo!&lt;/p&gt;
+            </code></pre>        
+            </div>
+
+            <div>
+            <pre><code>
+&lt;!--JavaScript--&gt;
+&lt;pre&gt;&lt;code&gt;
+console.log("Olá, mundo!");
+&lt;/code&gt;&lt;/pre&gt;    
+            </code></pre>
+
+            <!--JavaScript-->
+            <pre><code>
+    console.log("Olá, mundo!");
+            </code></pre> 
+            </div>
+
+            <div>
+            <pre><code>
+&lt;!--C--&gt;
+&lt;pre&gt;&lt;code&gt;
+printf("Olá, mundo!\n");
+&lt;/code&gt;&lt;/pre&gt;            
+            </code></pre>
+            
+            <!--C-->
+            <pre><code>
+printf("Olá, mundo!\n");
+            </code></pre>        
+            </div>
+            
+            <small><a href="#inicio">(Topo)</a></small>
+        </li>
+    </ul>  
+    
+    <hr />
+
+    <h2 id="tag-figura">Tag para incluir figuras</h2>
+    <small><a href="#inicio">(Topo)</a></small>
+    
+    <ul>
+        <li>
+            <p><strong>&lt;img /&gt;:</strong> Usada para incorporar uma imagem em uma página web.<br />Utilize os atributos de <b>img</b> para definir o diretório da imagem, a largura da imagem, entre outros.</p>
+
+            <ul>
+                <li>
+                    <p><strong>src:</strong> Este é um atributo obrigatório que especifica a URL (Uniform Resource Locator) ou caminho para o arquivo de imagem.</p>
+                </li>
+                <li>
+                    <p><strong>width:</strong> Define a largura da imagem em <b>pixel</b> (px) ou em <b>porcentagem</b> (%). Não precisa incluir a unidade <b>px</b>.</p>
+                </li>
+                <li>
+                    <p><strong>style:</strong> Utilize a propriedade <code>width</code> deste atributo para definir a largura da imagem utilizando a unidade <b>pixel</b> (px) e outras unidades, podendo ser:</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Unidades absolutas:</strong> Essas unidades têm um tamanho fixo e não mudam com base em outros elementos ou no tamanho da tela. São ideais para layouts de impressão, mas podem causar problemas de acessibilidade na web, pois não se adaptam às configurações do usuário.</p>
+
+                            <ul>
+                                <li>
+                                    <p><strong>px (pixels):</strong> A unidade mais comum para telas. Por padrão, a largura é considerada em pixels se a unidade não for especificada. Em telas de alta resolução, um pixel de CSS pode corresponder a vários pixels do dispositivo.</p>
+                                </li>
+
+                                <li>
+                                    <p><strong>cm (centímetros), mm (milímetros), in (polegadas):</strong> Usadas principalmente para folhas de estilo de impressão. </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Unidades relativas: </strong> Essas unidades se adaptam com base no elemento pai, no elemento raiz (root) ou na janela de visualização (viewport), sendo a melhor opção para criar designs responsivos.</p>
+
+                            <ul>
+                                <li>
+                                    <p><strong>Relativas à fonte</strong></p>
+
+                                    <ul>
+                                        <li>
+                                            <p><strong>em:</strong>  Relativa ao <code>font-size</code> do elemento pai. Se o <code>font-size</code> do pai mudar, o tamanho em em também mudará.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>rem:</strong> Relativa ao <code>font-size</code> do elemento raiz (<b>&lt;html&gt;</b>). Usada para garantir que o escalonamento seja consistente em toda a página, sem o problema de herança aninhada do em.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>ch:</strong> Relativa à largura do caractere "0" (zero) da fonte atual. </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Relativas à viewport</strong></p>
+
+                                    <ul>
+                                        <li>
+                                            <p><strong>% (porcentagem):</strong> Relativa à largura do elemento que a contém (elemento pai).</p>
+                                            <ul>
+                                                <li>
+                                                    <p><strong>Exemplo: </strong> <code>width: 50%;</code> ocupará metade da largura do elemento pai.</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p><strong>vw (viewport width):</strong> Relativa a 1% da largura da janela de visualização do navegador. Uma <code>width: 100vw;</code> ocupará 100% da largura da tela.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>vh (viewport height):</strong> Relativa a 1% da altura da janela de visualização.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>vmin (viewport minimum):</strong> Relativa a 1% da menor dimensão da janela de visualização (altura ou largura).</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>vmax (viewport maximum):</strong> Relativa a 1% da maior dimensão da janela de visualização (altura ou largura).</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Exemplo: </strong>Incluindo uma imagem.</p>
+
+            <div>
+            <pre><code>
+&lt;img width="250px" src="./assets/images/picture-1.jpg"/&gt;
+            </code></pre>
+
+            <img width="250px" src="./assets/images/picture-1.jpg"/>
+            </div>
+
+            <div>
+            <pre><code>
+&lt;img width="50%" src="./assets/images/picture-1.jpg"/&gt;                 
+            </code></pre>
+
+        <img width="50%" src="./assets/images/picture-1.jpg"/>
+            </div>
+
+            <div>
+            <pre><code>
+&lt;img style="width:50vmin;" src="./assets/images/picture-1.jpg"/&gt;                 
+            </code></pre>
+
+        <img style="width:50vmin;" src="./assets/images/picture-1.jpg"/>
+            </div>            
+        </li>
+    </ul>    
+
+    <hr />
+
+    <h2 id="tag-incluir-dados">Tag para incluir dados</h2>
+    <small><a href="#inicio">(Topo)</a></small>
+    
+    <ul>
+        <li>
+            <p><strong>Atributo principal - <code>type</code>:</strong> Este atributo é o mais importante e define o tipo de controle que o <b><code>&lt;input&gt;</code></b> irá renderizar (o tipo de entrada) e, consequentemente, o comportamento e os atributos aplicáveis.</p>
+
+            <ul>
+                <li>
+                    <p><strong>Entrada de texto e variações específicas</strong></p>
+
+                    <ul>
+                        <li>
+                            <p><strong>text:</strong> Campo de texto de linha única.</p>
+                        </li>
+                        <li>
+                            <p><strong>password:</strong> Campo de texto que oculta o valor digitado com asteriscos.</p>
+                        </li>
+                        <li>
+                            <p><strong>email:</strong> Campo para entrada de endereços de e-mail.</p>
+                        </li>
+                        <li>
+                            <p><strong>number:</strong> Campo para inserir números.</p>
+                        </li>
+                        <li>
+                            <p><strong>tel:</strong> Um campo para números de telefone.</p>
+                        </li>
+                        <li>
+                            <p><strong>url:</strong> Campo para inserir um endereço URL.</p>
+                        </li>
+                        <li>
+                            <p><strong>search:</strong> Campo de busca otimizado para a entrada de termos de pesquisa.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Seleção booleana ou exclusiva</strong></p>
+
+                    <ul>
+                        <li>
+                            <p><strong>checkbox:</strong> Uma caixa de seleção que pode ser marcada com asteriscos.</p>
+                        </li>
+                        <li>
+                            <p><strong>radio:</strong> Um botão de opção, permitindo a seleçã de apenas um item em um grupo.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Upload e envio de imagens</strong></p>
+
+                    <ul>
+                        <li>
+                            <p><strong>file: </strong> Permite ao usuário selecionar um arquivo para upload.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Entrada de datas e horários</strong></p>
+
+                    <ul>
+                        <li>
+                            <p><strong>date:</strong> Cria um campo de seleção de data.</p>
+                        </li>
+                        <li>
+                            <p><strong>time:</strong> Permite ao usuário selecionar um horário (horas e minutos).</p>
+                        </li>
+                        <li>
+                            <p><strong>datetime-local:</strong> Permite ao usuário selecionar data e hora local (sem fuso horário).</p>
+                        </li>
+                        <li>
+                            <p><strong>month:</strong> Permite selecionar um mês e ano.</p>
+                        </li>
+                        <li>
+                            <p><strong>week:</strong> Permite selecionar uma semana específica do ano.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Seleção de intervalo numérico</strong></p>
+
+                    <ul>
+                        <li>
+                            <p><strong>range:</strong> Um controle delizante para inserir um número de um intervalo.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Seleção de cor</strong></p>
+
+                    <ul>
+                        <li>
+                            <p><Strong>color:</Strong> Campo para selecinar uma cor.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Valor oculto, enviado com o formulário</strong></p>
+
+                    <ul>
+                        <li>
+                            <p><strong>hidden:</strong> Cria um campo invisível que envia dados ocultos junto com o formulário.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Botões de ação</strong></p>
+
+                    <ul>
+                        <li>
+                            <p><strong>button:</strong> Um botão clicável genérico.</p>
+                        </li>
+                        <li>
+                            <p><strong>submit:</strong> Um botão que envia os dados do formulário.</p>
+                        </li>
+                        <li>
+                            <p><strong>reset:</strong> Cria um botão que redefine tds os caps do formulário para seus valres iniciais (os definidos no HTML), sem enviar os dados ao servidor.</p>
+                        </li>
+                        <li>
+                            <p><strong>image:</strong> Atua como um botão de envio (igual a <b><code>submit</code></b>), mas exibindo uma imagem clicável. As cordenadas do clique (x, y) são enviadas.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Atributos de controle de envio  - <code>form*</code>:</strong></p>
+
+            <!--
+            ul>li>p>strong{<code></code>:}
+            -->
+            <ul>
+                <li>
+                    <p><strong><code>name</code>:</strong> Identifica o nome do campo, usado para enviar dados ao servidor (chave usada no envio dos dados).</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Exemplo</strong></p>
+                            
+                            <div>
+                                <pre><code>
+    &lt;input type="radio" name="genero" value="masculino"&gt; Masculino
+    &lt;input type="radio" name="genero" value="feminino"&gt; Feminino                                 
+                                </code></pre>
+
+                                <input type="radio" name="genero" value="masculino"> Masculino
+                                <input type="radio" name="genero" value="feminino"> Feminino     
+                            </div>                       
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong><code>form</code>:</strong> Associa um campo de entrada de dados <b><code>input</code></b> a um <b><code>&lt;form&gt;</code></b> específico, mesmo que este campo esteja localizado em qualquer outra parte do documento HTML e não dentro da tag.</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Exemplo:</strong> </p>
+                        </li>
+
+                        <div>
+                            <pre><code>
+&lt;!-- O formulário com o ID "contato" --&gt;
+&lt;form id="contato" action="/enviar-dados" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+&lt;/form&gt;
+
+&lt;!-- O botão de envio fora da tag &lt;form&gt;, mas associado a ela pelo atributo 'form' --&gt;
+&lt;p&gt;
+    Clique no botão para enviar o formulário.
+    &lt;input type="submit" value="Enviar" form="contato"&gt;
+&lt;/p&gt;                                 
+                            </code></pre>
+
+                            <!-- O formulário com o ID "contato" -->
+                            <form id="contato" action="/enviar-dados" method="post">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome">
+                                <br>
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email">
+                            </form>
+
+                            <!-- O botão de envio fora da tag <form>, mas associado a ela pelo atributo 'form' -->
+                            <p>
+                                Clique no botão para enviar o formulário.
+                                <input type="submit" value="Enviar" form="contato">
+                            </p>
+                        </div>                        
+                    </ul>
+
+                </li>
+                <li>
+                    <p><strong><code>formaction</code>:</strong> URL de destino dos dados ao enviar (<b><code>&lt;submit&gt;</code></b> específico).<br />
+                    Ele substitui o atributo <b><code>&lt;action&gt;</code></b> da tag <b><code>&lt;form&gt;</code></b> para o botão <b><code>&lt;submit&gt;</code></b> (ou <b><code>&lt;image&gt;</code></b>) em que é usado.<br />
+                    Isso permite que um formulário tenha vários botões de envi, cada um enviando os dados para um destin diferente.</p>
+
+                    <div>
+                        <pre><code>
+&lt;form action="/salvar-dados.php"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;input type="submit" value="Salvar no banco de dados"&gt;
+
+    &lt;input type="submit" formaction="/enviar-por-email.php" value="Enviar por e-mail"&gt;
+&lt;/form&gt; 
+                        </code></pre>
+
+                        <form action="/salvar-dados.php">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome">
+                            <br><br>
+
+                            <input type="submit" value="Salvar no banco de dados">
+
+                            <input type="submit" formaction="/enviar-por-email.php" value="Enviar por e-mail">
+                        </form>                         
+                    </div>
+                </li>
+                <li>
+                    <p><strong><code>formactype</code>:</strong> Define o tipo de codificação dos dados enviados ao servidor.<br />
+                    Funciona apenas em elementos <b><code>&lt;input&gt;</code></b> com <b><code>type="submit"</code></b> ou <b><code>type="image"</code></b> e sobrescreve o atributo <b><code>enctype</code></b> definido na tag <b><code>&lt;form&gt;</code></b> principal.</p>
+
+                    <ul>
+                        <li>
+                            <p><strong><code>application/x-www-form-urlencoded</code>:</strong> É o valor padrão. Codifica todos os caracteres antes de enviá-los, convertendo espaços em <b><code>+</code></b> e caracteres especiais em seus valores hexadecimais.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>multipart/form-data</code>:</strong> Usado para enviar dados de formulários que contêm arquivos, como imagens e documentos. Ele não codifica os caracteres. É obrigatório para o envio de arquivos.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>text/plain</code>:</strong> Converte espaços em <b><code>+</code></b>, mas não codifica os caracteres especiais.</p>
+                        </li>
+                        <li>
+                            <p><strong>Exemplo</strong></p>
+
+                            <div>
+                                <pre><code>
+&lt;form action="/destino.php" method="post"&gt;
+    &lt;label for="fname"&gt;Primeiro nome:&lt;/label&gt;
+    &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+    
+    &lt;label for="arquivo"&gt;Anexar arquivo:&lt;/label&gt;
+    &lt;input type="file" id="arquivo" name="arquivo"&gt;&lt;br&gt;&lt;br&gt;
+    
+    &lt;!-- Botão de envio padrão --&gt;
+    &lt;input type="submit" value="Enviar Dados"&gt;
+    
+    &lt;!-- Botão de envio que sobrescreve o enctype do formulário para upload --&gt;
+    &lt;input type="submit" formenctype="multipart/form-data" value="Enviar com arquivo"&gt;
+&lt;/form&gt;                                      
+                                </code></pre>
+
+                                <form action="/destino.php" method="post">
+                                    <label for="fname">Primeiro nome:</label>
+                                    <input type="text" id="fname" name="fname"><br><br>
+                                    
+                                    <label for="arquivo">Anexar arquivo:</label>
+                                    <input type="file" id="arquivo" name="arquivo"><br><br>
+                                    
+                                    <!-- Botão de envio padrão -->
+                                    <input type="submit" value="Enviar Dados">
+                                    
+                                    <!-- Botão de envio que sobrescreve o enctype do formulário para upload -->
+                                    <input type="submit" formenctype="multipart/form-data" value="Enviar com arquivo">
+                                </form>                                  
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <p><strong><code>formmethod</code>:</strong> Usado para substituir o método HTTP especificado no atributo <b><code>method</code></b> da tag <b><code>&lt;form&gt;</code></b> à qual ele pertence.</p>
+
+                    <ul>
+                        <li>
+                            <p><strong><code>get</code>:</strong> Envia os dados do formulário como pares de nome/valor na URL.</p>
+
+                            <ul>
+                                <li>
+                                    <p>Os dados ficam visíveis na barra de endereço do navegador.</p>
+                                </li>
+                                <li>
+                                    <p>É menos seguro e tem um limite de quantidade de dados a serem enviados.</p>
+                                </li>
+                                <li>
+                                    <p>É mais adequado para consultas de busca e dados não sensíveis.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong><code>post</code>:</strong> Envia os dados do formulário dentro do corpo da solicitação HTTP.</p>
+
+                            <ul>
+                                <li>
+                                    <p>Os dados não ficam visíveis na URL.</p>
+                                </li>
+                                <li>
+                                    <p>É mais seguro e não tem limitações de quantidade de dados.</p>
+                                </li>
+                                <li>
+                                    <p>É o método preferido para enviar dados sensíveis, como senhas.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Exemplo:</strong></p>
+
+                            <div>
+                                <pre><code>
+&lt;form action="/action_page.php" method="post"&gt;
+    Primeiro nome: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+    Último nome: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+    &lt;button type="submit"&gt;Enviar com POST (método padrão)&lt;/button&gt;
+    &lt;button type="submit" formmethod="get"&gt;Pesquisar (com GET)&lt;/button&gt;
+&lt;/form&gt;                                      
+                                </code></pre>
+
+                                <form action="/action_page.php" method="post">
+                                    Primeiro nome: <input type="text" name="fname"><br>
+                                    Último nome: <input type="text" name="lname"><br>
+                                    <button type="submit">Enviar com POST (método padrão)</button>
+                                    <button type="submit" formmethod="get">Pesquisar (com GET)</button>
+                                </form>                                  
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong><code>formtarget</code>:</strong> Usado para especificar onde a resposta do servidr, após a submissão de um formulário, deverá ser exibida.<br />
+                    Funciona com uma substituição local para o atributo <b><code>target</code></b> da tag <b><code>&lt;form&gt;</code></b> à qual o input pertence.<br />
+                    Aplicável apenas a inputs com o <b><code>type</code></b> igual a <b><code>submit</code></b> (botão de envio) ou <b><code>image</code></b> (botão de imagem).</p>
+
+                    <ul>
+                        <li>
+                            <p><strong><code>_self</code> (valor padrão):</strong> Abre a resposta na mesma janela ou aba em que o formulári foi enviado.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>_blank</code>:</strong> Abre a resposta em uma nova janela u aba do navegador.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>_parent</code>:</strong> Exibe a resposta no frame pai do frame atual.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>_top</code>:</strong> Abre a resposta no corpo da janela do navegador, cancelando qualquer estrutura de frames que possa existir.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>framename</code>:</strong> Exibe a resposta em um <b><code>&lt;iframe&gt;</code></b> (ou frame) específico, nomeado com esse valor.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong><code>formnovalidate</code>:</strong> Ignora validação ao enviar este campo.</p>
+                </li>
+                <li>
+                    <p><strong><code>value</code>:</strong> Define o valor inicial (padrão) do campo e tambném o valor enviado (se aplicável).</p>
+                </li>
+                <li>
+                    <p><strong><code>dirname</code>:</strong> Envia a direção do texto (<b><code>ltr</code></b>, <b><code>rtl</code></b>) junto com o valor.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Atributos de validação e restrição de dados</strong></p>
+
+            <ul>
+                <li>
+                    <p><strong><code>required</code>:</strong> Um atributo booleano para especifícar preenchido brigatório antes do envio do formulário.</p>
+                </li>
+                <li>
+                    <p><strong><code>pattern</code>:</strong> Especifica uma expressão regular que o valor do campo deve corresponder para ser considerado válido.</p>
+                </li>
+                <li>
+                    <p><strong><code>min</code>:</strong> Define o valor mínimo permitido para campos numéricos ou de data.</p>
+                </li>
+                <li>
+                    <p><strong><code>max</code>:</strong> Define o valor máximo permitido para campos numéricos ou de data.</p>
+                </li>
+                <li>
+                    <p><strong><code>minlength</code>:</strong> Define o número mínimo de caracteres necessários.</p>
+                </li>
+                <li>
+                    <p><strong><code>maxlength</code>:</strong> Limita o número máximo de caracteres que podem ser digitados.</p>
+                </li>
+                <li>
+                    <p><strong><code>step</code>:</strong> Define o incremento permitido entre valores numéricos.</p>
+                </li>
+                <li>
+                    <p><strong><code>readonly</code>:</strong> Impede o usuário de modificar o valor do campo, mas permite que o valor seja enviado com o formulário.</p>
+                </li>
+                <li>
+                    <p><strong><code>disabled</code>:</strong> Desabilita o campo, tornando-o inativo, impedindo que o seu valor seja enviado.</p>
+                </li>
+                <li>
+                    <p><strong><code>accept</code>:</strong> Define os tipos de aqrquivos aceitos (<b><code>.jpg</code></b>, <b><code>image/*</code></b>, etc).</p>
+                </li>
+                <li>
+                    <p><strong><code>multiple</code>:</strong> Permite a seleção de múltiplos arquivos ou valores (dependendo do tipo do campo).</p>
+                </li>                
+            </ul>
+        </li>
+        <li>
+            <p><strong>Atributos de comportamento e acessibilidade</strong></p>
+
+            <ul>
+                <li>
+                    <p><strong><code>autofocus</code>:</strong> Foca automaticamente no campo ao carregar a página.</p>
+                </li>
+                <li>
+                    <p><strong><code>autocomplete</code>:</strong> Ativa/desativa autocompletar (<b><code>on</code></b>, <b><code>off</code></b>, <b><code>email</code></b>, <b><code>name</code></b>, etc) baseado em dados que o usuário inseriu anteriormente.</p>
+                </li>
+                <li>
+                    <p><strong><code>inputmode</code>:</strong> Sugere tipo de teclado em dispositivo móveis (<b><code>numeric</code></b>, <b><code>email</code></b>, etc).</p>
+                </li>
+                <li>
+                    <p><strong><code>capture</code>:</strong> Solicita entrada da câmera/microfone (em <b><code>file</code></b>).</p>
+                </li>
+                <li>
+                    <p><strong><code>placeholder</code>:</strong> xibe um texto de exemplo dentro do campo (desaparece quando o usuário digitar algo).</p>
+                </li>
+                <li>
+                    <p><strong><code>tabindex</code>:</strong> Define a ordem de navegação via tecla <b>TAB</b>.</p>
+                </li>
+                <li>
+                    <p><strong><code>list</code>:</strong> Permite vincular o campo a um elemento <b><code>&lt;datalist&gt;</code></b>, oferecendo opções de preenchimento automático. </p>
+                </li>
+                <li>
+                    <p><strong><code>aria-*</code>:</strong> Atributos de acessibilidade (ARIA).</p>
+                </li>
+                <li>
+                    <p><strong><code>enterkeyhint</code>:</strong> Sugere o rótul do botão <b>Enter</b> no teclado virtual.</p>
+                </li>
+                <li>
+                    <p><strong><code>tittle</code>:</strong> Texto exibido como dica ao passar o mouse.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Atributos de aparência e layout</strong></p>
+
+            <ul>
+                <li>
+                    <p><strong><code>id</code>:</strong> Identifica o elemento de forma única no campo, útil para associar com uma <b><code>&lt;label&gt;</code></b> ou para manipulação com JavaScript.</p>
+                </li>
+                <li>
+                    <p><strong><code>class</code>:</strong> Define classes CSS para estilização.</p>
+                </li>
+                <li>
+                    <p><strong><code>style</code>:</strong> Define estilos inline.</p>
+                </li>
+                <li>
+                    <p><strong><code>size</code>:</strong> Largura do campo em caracteres.</p>
+                </li>
+                <li>
+                    <p><strong><code>width</code>:</strong> Largura de um campo (para <b><code>type="image"</code></b>).</p>
+                </li>
+                <li>
+                    <p><strong><code>height</code>:</strong> Altura de um campo (para <b><code>&lt;type="image"&gt;</code></b>).</p>
+                </li>
+                <li>
+                    <p><strong><code>alt</code>:</strong> Texto alternativo (para <b><code>image</code></b>).</p>
+                </li>
+                <li>
+                    <p><strong><code>src</code>:</strong> URL da imagem (para <b><code>image</code></b>).</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Atributos de estado e seleção</strong><br /> (Específicos para botões de opção e caixas de seleção).</p>
+
+            <ul>
+                <li>
+                    <p><strong><code>checked</code>:</strong>  Define se  campo inicia marcado (<b><code>checked</code></b>, <b><code>radio</code></b>).</p>
+                </li>
+                <li>
+                    <p><strong><code>value</code>:</strong> Valor ennviado quando marcado.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Atributos de eventos (interatividade)</strong></p>
+
+            <ul>
+                <li>
+                    <p><strong><code>oninput</code>:</strong> Executa código conforme o usuário digita.</p>
+                </li>
+                <li>
+                    <p><strong><code>onchange</code>:</strong> Executa código quando o valor muda.</p>
+                </li>
+                <li>
+                    <p><strong><code>onclick</code>:</strong> Ao clicar no campo.</p>
+                </li>
+                <li>
+                    <p><strong><code>onfocus</code>:</strong> Ao ganhar foco.</p>
+                </li>
+                <li>
+                    <p><strong><code>onblur</code>:</strong> Ao perder foco.</p>
+                </li>
+            </ul>
+        </li>        
+        <li>
+            <p><strong>Observação importante:  </strong> O comportamento e a relevância de muitos atributos dependem diretamente do valor de <b><code>type</code></b>.<br />
+            Por exemplo, <b><code>min</code></b> e <b><code>max</code></b> não se aplicam a <b><code>text</code></b>, mas são excenciais em <b><code>number</code></b> e <b><code>date</code></b>.</p>          
+        </li>
+    </ul>
+
+    <hr />
+
+    <h2 id="tag-ancora">Tag âncora (hyperlink)</h2>
+    <small><a href="#inicio">(Topo)</a></small>
+    
+    <ul>
+        <li>
+            <p><strong><code>&lt;a&gt; e &lt;/a&gt;</code>:</strong> Define um link que pode nacegar para outra página, seção, arquivo ou ação.<br />
+            É um dos principais elementos de navegação em <b><code>HTML</code></b>.<br />
+            Seus principais atributos são:</p>
+
+            <ul>
+                <li>
+                    <p><strong><code>href</code>:</strong> Define  destino d link (URL, âncora, e-mail, etc).</p>
+                </li>
+                <li>
+                    <p><strong><code>target</code>:</strong> Especifica onde abrir o link (`_blank`, `_self`, etc).</p>
+                </li>
+                <li>
+                    <p><strong><code>title</code>:</strong> Exibe uma dica ao passar o mouse.</p>
+                </li>
+                <li>
+                    <p><strong><code>download</code>:</strong> Faz o link baixar o arquivo em vez de abri-lo.</p>
+                </li>
+                <li>
+                    <p><strong><code>rel</code>:</strong> Define a relação entre o document e o link (`noopener`, `nofollow`, etc).</p>
+                </li>
+                <li>
+                    <p><strong><code>type</code>:</strong> Indica o tipo MIME do recurso (ex: `application/pdf`).</p>
+                </li>
+                <li>
+                    <p><strong><code>hreflang</code>:</strong> Define o idioma do destino.</p>
+                </li>
+                <li>
+                    <p><strong>Exemplo</strong></p>
+
+                    <div>
+                        <pre><code>
+&lt;a href="about.html" title="Clique para saber mais!" target="_self"&gt;&lt; Voltar&lt;/a&gt;                            
+                        </code></pre>
+
+                        <a href="about.html" title="Clique para saber mais!" target="_self">Sobre a empresa</a>                   
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+</html>
