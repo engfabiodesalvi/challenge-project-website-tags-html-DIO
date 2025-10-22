@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
 <body>
     <h1 id="inicio">Coletânea de tags e atributos da linguagem HTML</h1>
 
-    <address>Autor: Fabio Toledo Bonemer De Salvi</address>
-
+    <a href="about.html" title="Clique para saber mais!" target="_self"><address>Autor: Fabio Toledo Bonemer De Salvi</address>
+    </a>
     <hr />
 
     <h2>Principais tags e atributos da linguagem HTML</h2>
@@ -25,6 +25,7 @@
                 <li><a href="#tag-head">&lt;head&gt; e &lt;/head&gt;</a></li>
                 <li><a href="#tag-body">&lt;body&gt; e &lt;/body&gt;</a></li>
                 <li><a href="#estrutura-basica">Estrutura básica</a></li>
+                <li><a href="#estrutura-minima">Estrutura mínima</a></li>
             </ul>
         </li>
         <li><a href="#tags-adicao-formatacao">Tags e atributos para adição e formatação de textos</a>
@@ -63,11 +64,26 @@
             <p><strong>&lt;body&gt; e &lt;/body&gt;:</strong> Seção do documento responsável pela parte visual do documento.</p>
         </li>
         <li id="estrutura-basica">            
-            <p><strong>Estrutura básica:</strong></p>
+            <p><strong>Exemplo 1:</strong> Estrutura básica.</p>
+
+            <pre><code>
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;                
+            </code></pre>
+
+        </li>      
+        <small><a href="#inicio">(Topo)</a></small>            
+
+        <li id="estrutura-minima">            
+            <p><strong>Exemplo 2:</strong> Tags e atributos mínimos para iniciar um documento escrito em HTML.</p>
 
             <pre><code>
 &lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html lang="pt-BR"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
@@ -79,8 +95,9 @@
 &lt;/html&gt;                
             </code></pre>
 
-        </li>        
+        </li>                
     </ul>
+    <small><a href="#inicio">(Topo)</a></small>
 
     <hr />
 
@@ -273,7 +290,7 @@
                     <p><strong>id:</strong> Define um identificador único para um elemento específico. Auxilia na identificação de um elemento quando se utiliza Javascript.</p>
                 </li>
                 <li>
-                    <p><strong>style:</strong> Define um estilo ão texto, podendo ser uma cor, uma determinada fonte, um determinada tamanho, entre outros, aplicado diretemente a um elemento.</p>
+                    <p><strong>style:</strong> Define um estilo ao texto, podendo ser uma cor, uma determinada fonte, um determinada tamanho, entre outros, aplicado diretemente a um elemento.</p>
                 </li>
                 <li>
                     <p><strong>class:</strong> Define a classe a que esta tag pertence. A classe representa um conjunto de estilos pré-determinado que pode ser aplicado a mais de um elemento.</p>
@@ -404,7 +421,7 @@
         </li>
 
         <li id="tags-exemplo2-listas-subitens">
-            <p><strong>Exemplo 2: Lista ordenada e lista não rdenada com itens e subitens</strong></p>        
+            <p><strong>Exemplo 2: Lista ordenada com itens e subitens</strong></p>        
 
             <div>
             <pre><code>
@@ -438,9 +455,15 @@
             </ol>
 
             </div>
+        </li>
 
-            <div>
-            <br />
+        <br />
+        <small><a href="#inicio">(Topo)</a></small>
+
+        <li id="tags-exemplo3-listas-subitens">
+            <p><strong>Exemplo 3: Lista ordenada e lista não ordenada com itens e subitens</strong></p>
+
+            <div>           
             <code><pre>
 &lt;h2&gt;Minha primeira lista não ordenada!&lt;/h2&gt;
 &lt;ul&gt;
@@ -455,7 +478,7 @@
         &lt;/ol&gt;
     &lt;/li&gt;
 &lt;/ul&gt;             
-            </code></pre>
+            </code></pre>            
 
             <h2>Minha primeira lista não ordenada!</h2>
             <ul>
@@ -475,8 +498,8 @@
             <small><a href="#inicio">(Topo)</a></small>
         </li>        
 
-        <li id="tags-exemplo3-codigos-dados">
-            <p><strong>Exemplo 3: Códigos e entradas de dados</strong></p>        
+        <li id="tags-exemplo4-codigos-dados">
+            <p><strong>Exemplo 4: Códigos e entradas de dados</strong></p>        
 
             <div>
             <pre><code>
@@ -537,9 +560,11 @@ printf("Olá, mundo!\n");
                 <li>
                     <p><strong>src:</strong> Este é um atributo obrigatório que especifica a URL (Uniform Resource Locator) ou caminho para o arquivo de imagem.</p>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong>width:</strong> Define a largura da imagem em <b>pixel</b> (px) ou em <b>porcentagem</b> (%). Não precisa incluir a unidade <b>px</b>.</p>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong>style:</strong> Utilize a propriedade <code>width</code> deste atributo para definir a largura da imagem utilizando a unidade <b>pixel</b> (px) e outras unidades, podendo ser:</p>
 
@@ -556,6 +581,7 @@ printf("Olá, mundo!\n");
                                     <p><strong>cm (centímetros), mm (milímetros), in (polegadas):</strong> Usadas principalmente para folhas de estilo de impressão. </p>
                                 </li>
                             </ul>
+                            <small><a href="#inicio">(Topo)</a></small>
                         </li>
                         <li>
                             <p><strong>Unidades relativas: </strong> Essas unidades se adaptam com base no elemento pai, no elemento raiz (root) ou na janela de visualização (viewport), sendo a melhor opção para criar designs responsivos.</p>
@@ -575,6 +601,7 @@ printf("Olá, mundo!\n");
                                             <p><strong>ch:</strong> Relativa à largura do caractere "0" (zero) da fonte atual. </p>
                                         </li>
                                     </ul>
+                                    <small><a href="#inicio">(Topo)</a></small>
                                 </li>
                                 <li>
                                     <p><strong>Relativas à viewport</strong></p>
@@ -601,6 +628,7 @@ printf("Olá, mundo!\n");
                                             <p><strong>vmax (viewport maximum):</strong> Relativa a 1% da maior dimensão da janela de visualização (altura ou largura).</p>
                                         </li>
                                     </ul>
+                                    <small><a href="#inicio">(Topo)</a></small>
                                 </li>
                             </ul>
 
@@ -619,6 +647,7 @@ printf("Olá, mundo!\n");
 
             <img width="250px" src="./assets/images/picture-1.jpg"/>
             </div>
+            <small><a href="#inicio">(Topo)</a></small>
 
             <div>
             <pre><code>
@@ -627,6 +656,7 @@ printf("Olá, mundo!\n");
 
         <img width="50%" src="./assets/images/picture-1.jpg"/>
             </div>
+            <small><a href="#inicio">(Topo)</a></small>
 
             <div>
             <pre><code>
@@ -634,7 +664,8 @@ printf("Olá, mundo!\n");
             </code></pre>
 
         <img style="width:50vmin;" src="./assets/images/picture-1.jpg"/>
-            </div>            
+            </div>  
+            <small><a href="#inicio">(Topo)</a></small>          
         </li>
     </ul>    
 
@@ -675,6 +706,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong>Seleção booleana ou exclusiva</strong></p>
 
@@ -687,6 +719,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong>Upload e envio de imagens</strong></p>
 
@@ -696,6 +729,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong>Entrada de datas e horários</strong></p>
 
@@ -717,6 +751,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong>Seleção de intervalo numérico</strong></p>
 
@@ -726,6 +761,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong>Seleção de cor</strong></p>
 
@@ -735,6 +771,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong>Valor oculto, enviado com o formulário</strong></p>
 
@@ -744,6 +781,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong>Botões de ação</strong></p>
 
@@ -761,9 +799,10 @@ printf("Olá, mundo!\n");
                             <p><strong>image:</strong> Atua como um botão de envio (igual a <b><code>submit</code></b>), mas exibindo uma imagem clicável. As cordenadas do clique (x, y) são enviadas.</p>
                         </li>
                     </ul>
-                </li>
+                </li>                
             </ul>
         </li>
+        <small><a href="#inicio">(Topo)</a></small>        
         <li>
             <p><strong>Atributos de controle de envio  - <code>form*</code>:</strong></p>
 
@@ -790,6 +829,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong><code>form</code>:</strong> Associa um campo de entrada de dados <b><code>input</code></b> a um <b><code>&lt;form&gt;</code></b> específico, mesmo que este campo esteja localizado em qualquer outra parte do documento HTML e não dentro da tag.</p>
 
@@ -834,6 +874,7 @@ printf("Olá, mundo!\n");
                     </ul>
 
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong><code>formaction</code>:</strong> URL de destino dos dados ao enviar (<b><code>&lt;submit&gt;</code></b> específico).<br />
                     Ele substitui o atributo <b><code>&lt;action&gt;</code></b> da tag <b><code>&lt;form&gt;</code></b> para o botão <b><code>&lt;submit&gt;</code></b> (ou <b><code>&lt;image&gt;</code></b>) em que é usado.<br />
@@ -863,6 +904,7 @@ printf("Olá, mundo!\n");
                         </form>                         
                     </div>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong><code>formactype</code>:</strong> Define o tipo de codificação dos dados enviados ao servidor.<br />
                     Funciona apenas em elementos <b><code>&lt;input&gt;</code></b> com <b><code>type="submit"</code></b> ou <b><code>type="image"</code></b> e sobrescreve o atributo <b><code>enctype</code></b> definido na tag <b><code>&lt;form&gt;</code></b> principal.</p>
@@ -915,6 +957,7 @@ printf("Olá, mundo!\n");
                     </ul>
 
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong><code>formmethod</code>:</strong> Usado para substituir o método HTTP especificado no atributo <b><code>method</code></b> da tag <b><code>&lt;form&gt;</code></b> à qual ele pertence.</p>
 
@@ -972,6 +1015,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong><code>formtarget</code>:</strong> Usado para especificar onde a resposta do servidr, após a submissão de um formulário, deverá ser exibida.<br />
                     Funciona com uma substituição local para o atributo <b><code>target</code></b> da tag <b><code>&lt;form&gt;</code></b> à qual o input pertence.<br />
@@ -995,6 +1039,7 @@ printf("Olá, mundo!\n");
                         </li>
                     </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
                 <li>
                     <p><strong><code>formnovalidate</code>:</strong> Ignora validação ao enviar este campo.</p>
                 </li>
@@ -1006,6 +1051,7 @@ printf("Olá, mundo!\n");
                 </li>
             </ul>
         </li>
+        <small><a href="#inicio">(Topo)</a></small>
         <li>
             <p><strong>Atributos de validação e restrição de dados</strong></p>
 
@@ -1045,6 +1091,7 @@ printf("Olá, mundo!\n");
                 </li>                
             </ul>
         </li>
+        <small><a href="#inicio">(Topo)</a></small>
         <li>
             <p><strong>Atributos de comportamento e acessibilidade</strong></p>
 
@@ -1081,6 +1128,7 @@ printf("Olá, mundo!\n");
                 </li>
             </ul>
         </li>
+        <small><a href="#inicio">(Topo)</a></small>
         <li>
             <p><strong>Atributos de aparência e layout</strong></p>
 
@@ -1111,6 +1159,7 @@ printf("Olá, mundo!\n");
                 </li>
             </ul>
         </li>
+        <small><a href="#inicio">(Topo)</a></small>
         <li>
             <p><strong>Atributos de estado e seleção</strong><br /> (Específicos para botões de opção e caixas de seleção).</p>
 
@@ -1123,6 +1172,7 @@ printf("Olá, mundo!\n");
                 </li>
             </ul>
         </li>
+        <small><a href="#inicio">(Topo)</a></small>
         <li>
             <p><strong>Atributos de eventos (interatividade)</strong></p>
 
@@ -1143,11 +1193,13 @@ printf("Olá, mundo!\n");
                     <p><strong><code>onblur</code>:</strong> Ao perder foco.</p>
                 </li>
             </ul>
-        </li>        
+        </li>   
+        <small><a href="#inicio">(Topo)</a></small>     
         <li>
             <p><strong>Observação importante:  </strong> O comportamento e a relevância de muitos atributos dependem diretamente do valor de <b><code>type</code></b>.<br />
             Por exemplo, <b><code>min</code></b> e <b><code>max</code></b> não se aplicam a <b><code>text</code></b>, mas são excenciais em <b><code>number</code></b> e <b><code>date</code></b>.</p>          
         </li>
+        <small><a href="#inicio">(Topo)</a></small>
     </ul>
 
     <hr />
@@ -1163,25 +1215,217 @@ printf("Olá, mundo!\n");
 
             <ul>
                 <li>
-                    <p><strong><code>href</code>:</strong> Define  destino d link (URL, âncora, e-mail, etc).</p>
+                    <p><strong><code>href</code> (Hyperlink Reference):</strong> Define o destino do link quando o usuário clicar no elemento.</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>URL absoluta:</strong> Um endereço completo, incluindo o protocolo (por exemplo, <b><code>https://www.google.com</code></b>).</p>
+                        </li>
+                        <li>
+                            <p><strong>URL relativa:</strong> Um endereço que aponta para um recurso dentro do mesmo site (por exemplo, <b><code>href="/contato.html"</code></b>).</p>
+                        </li>
+                        <li>
+                            <p><strong>Âncora na mesma página:</strong> Um link interno que leva a uma seção específica da página atual (por exemplo, <b><code>href="#secao1"</code></b>, onde a seção tem um <b><code>id="secao1"</code></b>).</p>
+                        </li>
+                        <li>
+                            <p><strong>Outros esquemas:</strong> Como <b><code>mailto:</code></b> para enviar e-mails (<b><code>href="mailto:email@exemplo.com"</code></b>) ou <b><code>tel:</code></b> para fazer ligações telefônicas.</p>
+                        </li>
+                    </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
+
                 <li>
-                    <p><strong><code>target</code>:</strong> Especifica onde abrir o link (`_blank`, `_self`, etc).</p>
+                    <p><strong><code>target</code>:</strong> Especifica onde o documento vinculado será aberto.</p>
+
+                    <ul>
+                        <li>
+                            <p><strong><code>_self</code> (valor padrão):</strong> Abre o link no mesmo quadro (ou janela) onde o link foi clicado. Este é o valor padrão e geralmente não precisa ser especificado explicitamente.</p>
+                        </li>                        
+                        <li>
+                            <p><strong><code>_blank</code>:</strong> Abre o link em uma nova janela ou aba do navegador.<br />
+                            Recomenda-se adicionar <b><code>rel="noopener noreferrer"</code></b> por questões de segurança, especialmente ao abrir links de fontes desconhecidas.<br />
+                            Este valor pode ter vulnerabilidades de segurança se não for usado com cuidado, como a possível exploração de <b><code>window.opener</code></b>. </p>
+                        </li>
+                        <li>
+                            <p><strong>_parent<code></code>:</strong> Abre o link no quadro pai. Se o link estiver dentro de um <b><code>&lt;iframe&gt;</code></b>, ele abrirá na janela superior.</p>
+                        </li>
+                        <li>
+                            <p><strong>_top<code></code>:</strong> Abre o documento no corpo completo da janela, cancelando todos os frames.
+</p>
+                        </li>
+                        <li>
+                            <p><strong>framename<code></code>:</strong> Abre o link em um <b><code>&lt;iframe&gt;</code></b> específico com o nome fornecido no valor do atributo <b><code>name</code></b>. </p>
+                        </li>
+                    </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
+
                 <li>
-                    <p><strong><code>title</code>:</strong> Exibe uma dica ao passar o mouse.</p>
+                    <p><strong><code>title</code>:</strong> Fornece informações extras sobre o link. O texto aparece como um **tooltip** quando o usuário passa o mouse sobre o link.</p>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
+
                 <li>
-                    <p><strong><code>download</code>:</strong> Faz o link baixar o arquivo em vez de abri-lo.</p>
+                    <p><strong><code>download</code>:</strong> Indica que o link deve forçar o download do arquivo em vez de navegá-lo.<br />
+                    Deve-se utilizar o atributo <b><code>href</code></b> para especificar a URL do arquivo a ser baixado (<b><code>href="documento.pdf"</code></b>). <br />
+                    O valor pode ser o caminho do arquivo no mesmo servidor ou um endereço absoluto (URL).<br />
+                    Opcionalmente, você pode sugerir um nome para o arquivo fazendo <b><code>download="nome_do_arquivo"</code></b>.</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Exemplo</strong></p>
+
+                            <div>
+                                <pre><code>
+&lt;p&gt;Âncora para abrir um arquivo pdf.&lt;/p&gt;                                   
+&lt;a href="documento.pdf"&gt;documento.pdf&lt;/a&gt; 
+
+&lt;p&gt;Âncora para fazer o download de um arquivo pdf.&lt;/p&gt;  
+&lt;a href="documento.pdf" download&gt;documento.pdf&lt;/a&gt;
+
+&lt;p&gt;Âncora para fazer o download de um arquivo pdf e salvá-lo com o nome de relatorio_final.&lt;/p&gt;  
+&lt;a href="documento.pdf" download="relatorio_final"&gt;documento.pdf&lt;/a&gt; 
+                                </code></pre>
+
+                                <p>Âncora para abrir um arquivo pdf.</p>                                   
+                                <a href="documento.pdf">documento.pdf</a> 
+
+                                <p>Âncora para fazer o download de um arquivo pdf.</p>  
+                                <a href="documento.pdf" download>documento.pdf</a>
+
+                                <p>Âncora para fazer o download de um arquivo pdf e salvá-lo com o nome de relatorio_final.</p>  
+                                <a href="documento.pdf" download="relatorio_final">documento.pdf</a>                                 
+                            </div>
+                        </li>
+                    </ul>
+
                 </li>
+                <br />
+                <small><a href="#inicio">(Topo)</a></small>
+
                 <li>
-                    <p><strong><code>rel</code>:</strong> Define a relação entre o document e o link (`noopener`, `nofollow`, etc).</p>
+                    <p><strong><code>rel</code>:</strong> Define a relação entre o documento atual e a URL para a qual o link aponta.<br />
+                    Ele é crucial para a acessibilidade, a segurança e a otimização para motores de busca (SEO).<br />
+                    Os valores do atributo rel podem ser combinados e separados por espaços.<br />
+                    Algumas opções mais comuns:</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Segurança e desempenho</strong></p>
+
+                            <ul>
+                                <li>
+                                    <p><strong><code>nofollow</code>:</strong> Indica aos motores de busca que eles não devem seguir o link ou passar "autoridade" (link juice) para a página de destino. É frequentemente usado em links pagos, comentários de usuários e outros conteúdos não confiáveis.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>noopener</code>:</strong> Usado junto com <b><code>target="_blank"</code></b> para abrir o link em uma nova aba ou janela. Impede que a página de destino tenha acesso à página original por meio da propriedade <b><code>window.opener</code></b>, prevenindo vulnerabilidades de segurança.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>noreferrer</code>:</strong> Impede que o navegador envie o cabeçalho HTTP <b><code>Referer</code></b> (com o endereço da página de origem) para a página de destino. Também deve ser usado com <b><code>target="_blank"</code></b>.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>preload</code>:</strong> Sugere ao navegador que ele deve buscar e armazenar em cache o recurso vinculado o mais rápido possível para melhorar o desempenho.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <small><a href="#inicio">(Topo)</a></small>
+
+                        <li>
+                            <p><strong>Navegação e estrutura de conteúdo</strong></p>
+
+                            <ul>
+                                <li>
+                                    <p><strong><code>next</code>:</strong> Indica que a página de destino é a próxima de uma série, como em uma paginação.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>prev</code>:</strong>  Indica que a página de destino é a anterior de uma série.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>author</code>:</strong> Aponta para a página ou o perfil do autor do documento.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>help</code>:</strong> Indica que o link aponta para um documento de ajuda ou um FAQ.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>license</code>:</strong> Indica que o link aponta para informações de direitos autorais ou licença do documento.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>search</code>:</strong> Aponta para uma ferramenta de pesquisa para o documento ou site.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>tag</code>:</strong> Indica que a URL aponta para um recurso relacionado a uma palavra-chave ou **tag** do documento atual.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <small><a href="#inicio">(Topo)</a></small>
+
+                        <li>
+                            <p><strong>Acessibilidade e conteúdo alternativo</strong></p>
+
+                            <ul>
+                                <li>
+                                    <p><strong><code>alternate</code>:</strong> Aponta para uma versão alternativa do documento, como uma versão para impressão, traduzida ou uma versão espelhada.</p>
+                                </li>
+                                <li>
+                                    <p><strong><code>bookmark</code>:</strong> Indica que o link é um link permanente para o conteúdo. </p>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
+
                 <li>
-                    <p><strong><code>type</code>:</strong> Indica o tipo MIME do recurso (ex: `application/pdf`).</p>
+                    <p><strong><code>type</code>:</strong> O atributo type na tag <b><code>&lt;a&gt;</code></b> (âncora) do HTML é apenas consultivo e especifica o tipo MIME do recurso vinculado.<br/>
+                    Atualmente, seu uso não é amplamente disseminado e os navegadores não consideram essa informação como autoritativa, ou seja, eles não a utilizam para determinar o tipo de conteúdo do link.<br />
+                    O valor do atributo type deve ser um tipo MIME válido, como os seguintes exemplos:</p>
+
+                    <ul>
+                        <li>
+                            <p><strong><code>text/html</code>:</strong> para páginas HTML.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>text/plain</code>:</strong> para texto simples.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>application/pdf</code>:</strong> para arquivos em formato PDF.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>image/png</code>:</strong> para imagens no formato PNG.</p>
+                        </li>
+                        <li>
+                            <p><strong><code>application/zip</code>:</strong> para arquivos compactados. </p>
+                        </li>
+                    </ul>
                 </li>
+                <small><a href="#inicio">(Topo)</a></small>
+
                 <li>
-                    <p><strong><code>hreflang</code>:</strong> Define o idioma do destino.</p>
+                    <p><strong><code>hreflang</code>:</strong> As opções para este atributo indicam o idioma (e, opcionalmente, a região) de um documento vinculado.<br />
+                    A sintaxe usa códigos padronizados para garantir a correta interpretação por navegadores e mecanismos de busca, como o **Google**.<br />
+                    Os <b>códigos de idiomas</b> de duas letras seguem o formato da norma ISO 639-1 (<b><code>en</code></b> para inglês, <b><code>pt</code></b> para português, etc).<br />
+                    E os <b>códigos de idioma e região</b>são definidos combinando o <b>código de idioma ISO 639-1</b> com o <b>código de país ISO 3166-1 Alpha 2</b>, separados por um hífen (<b><code>en-US</code></b> para inglês nos Estados Unidos, <b><code>en-GB</code></b> para inglês no Reino Unido, <b><code>pt-BR</code></b> para português no Brasil, <b><code>pt-PT</code></b> para português em Portugal, etc). <br />
+                    O valor especial <b><code>x-default</code></b> é usado para indicar uma página padrão (geralmente uma página de seleção de idioma) que não é destinada a uma região ou idioma específico. Ele deve ser exibido quando não houver uma versão de idioma mais apropriada para o usuário.</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Exemplo</strong></p>
+
+                            <div>
+                                <pre><code>
+&lt;a href="https://example.com/br" rel="alternate" hreflang="pt-BR"&gt;Versão em Português do Brasil&lt;/a&gt;                                    
+                                </code></pre>
+
+<a href="https://example.com/br" rel="alternate" hreflang="pt-BR">Versão em Português do Brasil</a>                                
+                            </div>
+                        </li>
+                    </ul>
+
+                    <br />
+                    <small><a href="#inicio">(Topo)</a></small>
                 </li>
                 <li>
                     <p><strong>Exemplo</strong></p>
@@ -1195,12 +1439,13 @@ printf("Olá, mundo!\n");
                     </div>
                 </li>
             </ul>
+            <br />
+            <small><a href="#inicio">(Topo)</a></small>
         </li>
     </ul>
-
-    <br />
-    <br />
-    <br />
+    <hr />
+    <h3>Desafio de projeto DIO</h3>
+    <a href="about.html" title="Clique para saber mais!" target="_self">Sobre o Desafio de Projeto DIO</a>
     <br />
 </body>
 </html>

@@ -12,10 +12,34 @@ A ideia deste Desafio de Projeto é elaborar um website, utilizando uma estrutur
 
 #### Autor: Fabio Toledo Bonemer De Salvi
 
-Seguindo o tema proposto, em criar um website utilizando as tags HTML explicadas em sala de aula, foi criado um website apresentando as principais tags e atributos utilizadas na linguagem HTML, separadas em categorias de aplicação e atributos, com exemplos de aplicação.\
+Foi criado um website utilizando as tags HTML aprendidas nas aulas anteriores.\
+Como conteúdo do website foi abordado a própria linguagem HTML, separada em tópicos acessíveis através de um menu no início da página, com as principais tags e atributos utilizadas na linguagem, separadas em categorias de aplicação e atributos, com exemplos de aplicação.\
 Como funcionalidade e requisito obrigatório, o website deve iniciar a página web com uma lista contendo os tópicos abordados.\
 Cada tópico listado no início do website deve possuir um elemento âncora (hiperlink) que deve apontar para o devido tópico com o elemento textual explicativo.\
-Cada tópico de elemento textual explicativo deve ter uma opção **< voltar** contendo um elemento âncora que permite voltar para o menu inicial contendo os tópicos abordados.
+Cada tópico de elemento textual explicativo deve ter uma opção **< voltar** contendo um elemento âncora que permite voltar para o menu inicial contendo os tópicos abordados.\
+A página de referência utilizada para realizar este projeto é de mesma autoria e está disponível [neste repositório]().\
+Os tópicos abordados neste projeto foram:
+- **Tags básicas**    
+    - **`<html> e </html>`**
+    - **`<head> e </head>`**
+    - **`<body> e </body>`**
+    - **Estrutura básica**
+    - **Estrutura mínima**
+- **Tags e atributos para adição e formatação de textos**
+    - **Tags para separação e estilos**
+    - **Tags de estrutura e organização**
+    - **Tags de estilo de texto e aparência**
+    - **Tags de correções e revisões**
+    - **Tags de código e entrada de dados**
+    - **Tags de citações e endereços**
+    - **Atributos para serem utilizados com as tags**
+    - **Exemplo 1: Formatação de texto**
+    - **Exemplo 2: Lista ordenada e lista não rdenada com itens e subitens**
+    - **Exemplo 3: Códigos e entradas de dados**
+- **Tag para incluir figuras**
+- **Tag para incluir dados**
+- **Tag âncora (hyperlink)**
+
 
 # GitHub
 
