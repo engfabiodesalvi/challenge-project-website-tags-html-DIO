@@ -17,7 +17,7 @@ Como conteúdo do website foi abordado a própria linguagem HTML, separada em t�
 Como funcionalidade e requisito obrigatório, o website deve iniciar a página web com uma lista contendo os tópicos abordados.\
 Cada tópico listado no início do website deve possuir um elemento âncora (hiperlink) que deve apontar para o devido tópico com o elemento textual explicativo.\
 Cada tópico de elemento textual explicativo deve ter uma opção **< voltar** contendo um elemento âncora que permite voltar para o menu inicial contendo os tópicos abordados.\
-A página de referência utilizada para realizar este projeto é de mesma autoria e está disponível [neste repositório]().\
+A página de referência utilizada para realizar este projeto é de mesma autoria e está disponível [neste repositório](https://github.com/engfabiodesalvi/introduction-to-html-in-practice-DIO.git).\
 Os tópicos abordados neste projeto foram:
 - **Tags básicas**    
     - **`<html> e </html>`**
