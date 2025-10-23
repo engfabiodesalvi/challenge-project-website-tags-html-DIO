@@ -17,7 +17,7 @@ Como conteúdo do website foi abordado a própria linguagem HTML, separada em t�
 Como funcionalidade e requisito obrigatório, o website deve iniciar a página web com uma lista contendo os tópicos abordados.\
 Cada tópico listado no início do website deve possuir um elemento âncora (hiperlink) que deve apontar para o devido tópico com o elemento textual explicativo.\
 Cada tópico de elemento textual explicativo deve ter uma opção **< voltar** contendo um elemento âncora que permite voltar para o menu inicial contendo os tópicos abordados.\
-A página de referência utilizada para realizar este projeto é de mesma autoria e está disponível [neste repositório](https://github.com/engfabiodesalvi/introduction-to-html-in-practice-DIO.git).\
+A página de referência utilizada para realizar este projeto é de mesma autoria e está disponível [<u>neste repositório</u>](https://github.com/engfabiodesalvi/introduction-to-html-in-practice-DIO.git).\
 Os tópicos abordados neste projeto foram:
 - **Tags básicas**    
     - **`<html> e </html>`**
@@ -43,10 +43,14 @@ Os tópicos abordados neste projeto foram:
 
 # GitHub
 
-Todo código-fonte desenvolvido durante o curso foi versionado no GitHub, no seguinte endereço:
+Todo código-fonte desenvolvido pelo instrutor durante o curso foi versionado no GitHub, no seguinte endereço:
 
 [<u>https://github.com/digitalinnovationone/trilha-html-modulo-1</u>](https://github.com/digitalinnovationone/trilha-html-modulo-1)
  
+O código-fonte do desafio de projeto desenvolvido por **Fabio Toledo Bonemer De Salvi** foi versionado no GitHub, no seguinte endereço:
+
+[<u>https://github.com/engfabiodesalvi/challenge-project-website-tags-html-DIO.git</u>](https://github.com/engfabiodesalvi/challenge-project-website-tags-html-DIO.git)
+
 # Dúvidas sobre como usar o Github?
 
 [<u>Veja essa aula com o expert Felipe Aguiar, clicando aqui.</u>](https://web.dio.me/lives/primeiros-passos-com-git-e-github)
